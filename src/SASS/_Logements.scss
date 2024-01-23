@@ -1,0 +1,84 @@
+.page_logement {
+    width: 95%;
+    min-height: 560px;
+    margin: 16px auto 100px auto;  
+    
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 30px 0;
+        &_infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_title {
+                font-size: 35px;
+                margin: 3px 0 20px 0;
+            }
+            &_location {
+                font-size: 18px;
+                margin: 3px 0 20px 0;
+            }
+            &_tags {
+                display: flex;
+                flex-wrap: wrap;
+                &_tag {
+                    font-size: 15px;
+                    color: white;
+                    background: $primary-color;
+                    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+                    margin: 0 16px 0 0;
+                    padding: 3px 24px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        &_hoster {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            &_infos {
+                display: flex;
+                align-items: center;
+                &_prenom {
+                    width: 120px;
+                    text-align: right;
+                    margin-right: 8px;
+                    font-size: 18px;
+                }
+                &_img {
+                    width: 53px;
+                    height: 53px;
+                    border-radius: 48px;
+                    object-fit: cover;
+                    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.2);
+                }
+            }
+            &_notes {
+                margin-top: 16px;
+                text-align: right;
+                &_star {
+                    padding-left: 5px;
+                    font-size: 25px;
+                    &_grey {
+                        color: rgb(188, 186, 186);
+                    }
+                }
+            }
+        }
+    }
+    &_collapses {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        &_contents {
+            width: 100%;
+            margin-bottom: 150px;
+            & ul {
+                margin: 0;
+            }
+        }
+    }
+}

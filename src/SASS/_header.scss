@@ -9,7 +9,7 @@
 
     &_logo {
         &_img {
-            width: 10rem;
+            width: 180px;
         }
     }
 
@@ -18,31 +18,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            list-style-type: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        & a {
+            text-decoration: none;
         }
         
         &_link {
             font-size: 19px;
-            margin: 1rem 0.5rem;
+            margin: 16px 14px;
             
             &_navlink {
-                padding: 0.2rem 0.7rem;
+                padding: 1px 2px;
+                color: $primary-color;
+                border: 1px solid transparent;
             }
             
             &_active {
-                font-family: 'Montserrat-Medium';
-                background: hsla(0, 100%, 82%, 0.2);
-                border-radius: 0.3rem;
-                padding: 0.2rem 0.7rem;
-            }
-
-            &_inactive {
-                transition: all 350ms ease-in-out;
-                &:hover {
-                    font-family: 'Montserrat-Medium';
-                    background: hsla(0, 100%, 82%, 0.2);
-                    border-radius: 0.3rem;
-                    padding: 0.2rem 0.7rem;
-                }
+                padding: 2px 3px;
+                text-decoration: underline;
+                border-bottom: 0.5px solid;
+                color: $primary-color;
             }
         }
     }

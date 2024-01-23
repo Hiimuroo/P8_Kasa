@@ -1,11 +1,66 @@
-ul, ol {
+li {
     list-style-type: none;
-  }
-  
-  /* Cela applique le style aux éléments de liste spécifiques (li) */
-  li {
-    list-style-type: none;
-    /* Autres styles pour les éléments de liste si nécessaire */
-    /* Par exemple, pour ajouter un espace après chaque élément de liste */
-    margin-bottom: 10px;
-  }
+}
+
+.Logements {
+    &_container {
+        width: 95%;
+        margin: 50px auto 160px auto;
+        background: $bg-secondary;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 14px;
+    }
+}
+
+.Logements {
+    width: 33%;
+
+    &_figure {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px #0000002e;
+        margin-block: 0;
+        margin-inline: 0;
+        margin: 16px;
+        border-radius: 8px;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        &_cover {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        &_figcaption {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: 1;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.7) 13%, rgba(0,212,255,0) 70%);
+            border-radius: 0 0 8px 8px;
+            &_title {
+                color: white;
+                font-size: 18px;
+                width: 95%;
+                position: absolute;
+                left: 10px;
+                bottom: 0px;
+            }
+        }
+    }
+}

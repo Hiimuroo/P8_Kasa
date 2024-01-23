@@ -1,0 +1,27 @@
+@import '_fonts.scss';
+
+.banner {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &_title {
+        position: absolute;
+        z-index: 1;
+        font-size: 48px;
+        font-style: normal;
+        color: white;
+        font-family: var(--primary-font);
+        font-weight: 500;
+    }
+
+    &_img {
+        position: relative;
+        width: 100%;
+        border-radius: 25px;
+        filter: brightness(70%);
+    }  
+}

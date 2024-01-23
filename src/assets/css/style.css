@@ -1,23 +1,25 @@
-@charset "UTF-8";
 .footer {
   position: absolute;
+  max-width: 1440px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(25, 25, 25);
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  flex-grow: 1;
 }
 .footer_logo {
-  margin-top: 1.5rem;
-  width: 5rem;
+  margin-top: 24px;
+  width: 80px;
 }
 .footer_text {
   color: white;
   font-size: 15px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .header {
@@ -28,44 +30,387 @@
   margin: auto;
 }
 .header_logo_img {
-  width: 10rem;
+  width: 180px;
 }
 .header_nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
+}
+.header_nav a {
+  text-decoration: none;
 }
 .header_nav_link {
   font-size: 19px;
-  margin: 1rem 0.5rem;
+  margin: 16px 14px;
 }
 .header_nav_link_navlink {
-  padding: 0.2rem 0.7rem;
+  padding: 1px 2px;
+  color: #ff5656;
+  border: 1px solid transparent;
 }
 .header_nav_link_active {
-  font-family: "Montserrat-Medium";
-  background: hsla(0, 100%, 82%, 0.2);
-  border-radius: 0.3rem;
-  padding: 0.2rem 0.7rem;
-}
-.header_nav_link_inactive {
-  transition: all 350ms ease-in-out;
-}
-.header_nav_link_inactive:hover {
-  font-family: "Montserrat-Medium";
-  background: hsla(0, 100%, 82%, 0.2);
-  border-radius: 0.3rem;
-  padding: 0.2rem 0.7rem;
+  padding: 2px 3px;
+  text-decoration: underline;
+  border-bottom: 0.5px solid;
+  color: #ff5656;
 }
 
-ul, ol {
-  list-style-type: none;
-}
-
-/* Cela applique le style aux éléments de liste spécifiques (li) */
 li {
   list-style-type: none;
-  /* Autres styles pour les éléments de liste si nécessaire */
-  /* Par exemple, pour ajouter un espace après chaque élément de liste */
-  margin-bottom: 10px;
+}
+
+.Logements_container {
+  width: 95%;
+  margin: 50px auto 160px auto;
+  background: #F6F6F6;
+  border-radius: 15px;
+  padding: 10px;
+}
+.Logements_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 14px;
+}
+
+.Logements {
+  width: 33%;
+}
+.Logements_figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1803921569);
+  margin-block: 0;
+  margin-inline: 0;
+  margin: 16px;
+  border-radius: 8px;
+}
+.Logements_figure:hover {
+  transform: scale(1.01);
+}
+.Logements_figure_cover {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.Logements_figure_figcaption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 13%, rgba(0, 212, 255, 0) 70%);
+  border-radius: 0 0 8px 8px;
+}
+.Logements_figure_figcaption_title {
+  color: white;
+  font-size: 18px;
+  width: 95%;
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+}
+
+:root {
+  --primary-font: Montserrat;
+}
+
+.app-container {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: auto;
+  max-width: 1440px;
+  font-size: 18px;
+  color: #ff5656;
+  font-family: "Montserrat";
+  background: #fff;
+}
+
+h1, h2 {
+  font-family: "Montserrat";
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ff5656;
+}
+
+:root {
+  --primary-font: Montserrat;
+}
+
+:root {
+  --primary-font: Montserrat;
+}
+
+.banner {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_title {
+  position: absolute;
+  z-index: 1;
+  font-size: 48px;
+  font-style: normal;
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+.banner_img {
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-reverse {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.collapse_header {
+  width: 80%;
+  margin: 30px auto;
+  height: 50px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5656;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+}
+.collapse_header_title {
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
+}
+.collapse_header_icon {
+  padding: 6px 16px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.collapse_content {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  color: #ff5656;
+  z-index: -1;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #F6F6F6;
+  margin-top: -30px;
+  border-radius: 0 0 10px 10px;
+  font-size: 16px;
+  line-height: 23px;
+  animation: slide 0.2s ease-in-out;
+}
+
+.about_collapses {
+  margin-top: 50px;
+  margin-bottom: 170px;
+}
+
+.erreur_contents_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.erreur_contents_content_title {
+  margin-top: 100px;
+  font-size: 250px;
+  margin-bottom: 3px;
+}
+.erreur_contents_content_subtitle {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.erreur_contents_content_button {
+  margin-bottom: 145px;
+}
+
+.page_logement {
+  width: 95%;
+  min-height: 560px;
+  margin: 16px auto 100px auto;
+}
+.page_logement_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+.page_logement_header_infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page_logement_header_infos_title {
+  font-size: 35px;
+  margin: 3px 0 20px 0;
+}
+.page_logement_header_infos_location {
+  font-size: 18px;
+  margin: 3px 0 20px 0;
+}
+.page_logement_header_infos_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page_logement_header_infos_tags_tag {
+  font-size: 15px;
+  color: white;
+  background: #ff5656;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+  margin: 0 16px 0 0;
+  padding: 3px 24px;
+  border-radius: 15px;
+}
+.page_logement_header_hoster {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.page_logement_header_hoster_infos {
+  display: flex;
+  align-items: center;
+}
+.page_logement_header_hoster_infos_prenom {
+  width: 120px;
+  text-align: right;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.page_logement_header_hoster_infos_img {
+  width: 53px;
+  height: 53px;
+  border-radius: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.2);
+}
+.page_logement_header_hoster_notes {
+  margin-top: 16px;
+  text-align: right;
+}
+.page_logement_header_hoster_notes_star {
+  padding-left: 5px;
+  font-size: 25px;
+}
+.page_logement_header_hoster_notes_star_grey {
+  color: rgb(188, 186, 186);
+}
+.page_logement_collapses {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.page_logement_collapses_contents {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.page_logement_collapses_contents ul {
+  margin: 0;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-radius: 13px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+}
+.slideshow:hover .slideshow_idx {
+  opacity: 1;
+}
+.slideshow_container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slideshow_container_img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideshow_controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+.slideshow_controls_chevron {
+  width: 50px;
+  height: auto;
+  font-size: 80px;
+  opacity: 0.7;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+.slideshow_controls_chevron:hover {
+  opacity: 1;
+}
+.slideshow_idx {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3px 6px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

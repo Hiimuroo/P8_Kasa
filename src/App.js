@@ -3,7 +3,9 @@ import IndexRoutes from "./components/Routes/Routes";
 
 const App = () => {
   return (
+    <div className="app-container">
     <IndexRoutes />
+    </div>
   )
 }
 

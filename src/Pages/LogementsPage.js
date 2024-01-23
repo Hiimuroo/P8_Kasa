@@ -1,17 +1,14 @@
 import React from 'react';
 import Header from '../components/layout/header.jsx'
-import Banner from '../components/layout/banner.jsx'
 import Footer from '../components/layout/footer.jsx'
-import Cards from '../components/Cards.jsx'
+import PageLogement from '../components/PageLogements/PageLogement.jsx';
 
 const Logements = () => {
   return (
     <>
       <Header />
-      <Banner />
-      <Cards />
+      <PageLogement />
       <Footer />
-      <h1>Contenu spécifique à la page Home</h1>
     </>
   );
 }

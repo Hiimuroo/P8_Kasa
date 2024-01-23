@@ -1,23 +1,25 @@
-@import '_colors.scss';
 .footer {
     position: absolute;
+    max-width: 1440px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(25, 25, 25);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    flex-grow: 1;
     
     &_logo {
-        margin-top: 1.5rem;
-        width: 5rem;
+        margin-top: 24px;
+        width: 80px;
     }
     
     &_text {
         color: white;
         font-size: 15px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 24px;
     }
 }
