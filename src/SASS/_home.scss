@@ -1,0 +1,11 @@
+ul, ol {
+    list-style-type: none;
+  }
+  
+  /* Cela applique le style aux éléments de liste spécifiques (li) */
+  li {
+    list-style-type: none;
+    /* Autres styles pour les éléments de liste si nécessaire */
+    /* Par exemple, pour ajouter un espace après chaque élément de liste */
+    margin-bottom: 10px;
+  }

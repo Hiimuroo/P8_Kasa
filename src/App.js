@@ -1,19 +1,10 @@
-// App.js
-import './assets/css/style.css';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from './components/Acceuil/Home/Home';
-import About from './components/Acceuil/About/About';
+import IndexRoutes from "./components/Routes/Routes";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
-  );
+    <IndexRoutes />
+  )
 }
 
 export default App;

@@ -1,3 +1,71 @@
-h1 {
-  color: Black;
+@charset "UTF-8";
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_logo {
+  margin-top: 1.5rem;
+  width: 5rem;
+}
+.footer_text {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+.header_logo_img {
+  width: 10rem;
+}
+.header_nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_nav_link {
+  font-size: 19px;
+  margin: 1rem 0.5rem;
+}
+.header_nav_link_navlink {
+  padding: 0.2rem 0.7rem;
+}
+.header_nav_link_active {
+  font-family: "Montserrat-Medium";
+  background: hsla(0, 100%, 82%, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.7rem;
+}
+.header_nav_link_inactive {
+  transition: all 350ms ease-in-out;
+}
+.header_nav_link_inactive:hover {
+  font-family: "Montserrat-Medium";
+  background: hsla(0, 100%, 82%, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.7rem;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/* Cela applique le style aux éléments de liste spécifiques (li) */
+li {
+  list-style-type: none;
+  /* Autres styles pour les éléments de liste si nécessaire */
+  /* Par exemple, pour ajouter un espace après chaque élément de liste */
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
