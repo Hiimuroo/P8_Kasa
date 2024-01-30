@@ -11,6 +11,7 @@
     align-items: center;
     margin: auto;
     flex-grow: 1;
+    box-sizing: border-box;
     
     &_logo {
         margin-top: 24px;
@@ -21,5 +22,11 @@
         color: white;
         font-size: 15px;
         margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 200px;
     }
 }

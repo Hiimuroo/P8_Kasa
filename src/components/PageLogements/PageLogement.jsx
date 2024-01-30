@@ -42,24 +42,24 @@ const PageLogements = () => {
                 </article>
             </header>
 
-            <article className='page_logement_collapses'>
-                <div className='page_logement_collapses_contents'>
-                    <Collapse
-                        title='Description'
-                        content={logement.description}
-                    />
-                </div>
-                <div className='page_logement_collapses_contents'>
-                    <Collapse
-                        title='Équipements'
-                        content={logement.equipments.map((equipment, i) => (
-                            <ul key={i}>
-                                <li>• {equipment}</li>
-                            </ul>
-                        ))}
-                    />
-                </div>
-            </article>
+            <article className='page_logement_collapses second_page_collapses'>
+            <div className='page_logement_collapses_contents'>
+        <Collapse
+            title='Description'
+            content={logement.description}
+        />
+        </div>
+        <div className='page_logement_collapses_contents second_page_collapses'>
+        <Collapse
+            title='Équipements'
+            content={logement.equipments.map((equipment, i) => (
+                   <ul key={i}>
+                      <li>• {equipment}</li>
+                  </ul>
+              ))}
+            />
+        </div>
+        </article>
         </section>
     )
 }

@@ -64,3 +64,37 @@ li {
         }
     }
 }
+
+@media(max-width: 768px) {
+    .Logements {
+        &_container {
+            background-color: transparent;
+            margin: 0 0 112px 0;
+            padding: 0;
+            width: 100%;
+            margin-bottom: 230px;
+        }
+        
+        &_list {
+            padding: 0;
+        }
+    }
+
+    .Logements {
+        width: 100%;
+
+        &_figure {
+            margin: 16px 8px;
+            
+            &_cover {
+                height: 335px;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1090px) {
+    .Logements {
+        width: 50%;
+    }
+}

@@ -14,14 +14,14 @@ const Header = () => {
                         <NavLink className={({ isActive }) => (isActive ? 'header_nav_link_navlink header_nav_link_active' : 'header_nav_link_navlink header_nav_link_inactive')}
                             title="Accueil"
                             end to='/'>
-                            Accueil
+                            ACCUEIL
                         </NavLink>
                     </li>
                     <li className='header_nav_link'>
                         <NavLink className={({ isActive }) => (isActive ? 'header_nav_link_navlink header_nav_link_active' : 'header_nav_link_navlink header_nav_link_inactive')}
                             title="À propos"
                             end to='/About'>
-                            À propos
+                            À PROPOS
                         </NavLink>
                     </li>
                 </ul>

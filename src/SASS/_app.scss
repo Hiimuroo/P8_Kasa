@@ -4,6 +4,7 @@
 .app-container {
     max-width: 1440px;
     height: auto;
+    padding: 5px;
     margin: 0 auto;
 }
 html {
@@ -29,4 +30,10 @@ li {
 a {
     text-decoration: none;
     color: $primary-color;
+}
+
+@media(max-width: 768px) {
+    .app-container {
+        padding: 0 10px;
+    }
 }

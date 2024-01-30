@@ -1,11 +1,13 @@
 @import '_colors.scss';
 
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
-    margin: auto;
+    width: 97%;
+    margin-left: 30px;
+    margin-right: 0;
 
     &_logo {
         &_img {
@@ -35,6 +37,7 @@
                 padding: 1px 2px;
                 color: $primary-color;
                 border: 1px solid transparent;
+                white-space: nowrap;
             }
             
             &_active {
@@ -44,5 +47,34 @@
                 color: $primary-color;
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 95%;
+
+    &_logo {
+        &_img {
+            width: 80%;
+        }
+    }
+
+    &_nav {
+        flex-direction: column;
+        align-items: center;
+
+        & ul li {
+            padding: 0;
+            margin: 0;
+        }
+
+        &_link {
+            &_navlink {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+        }
+    }
     }
 }
