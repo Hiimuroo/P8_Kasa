@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer {
   position: absolute;
   max-width: 1440px;
@@ -33,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   width: 97%;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 0;
 }
 .header_logo_img {
@@ -341,6 +342,12 @@ a {
   animation: slideIn 1s ease-out;
 }
 
+.single_slide {
+  width: 100%; /* Faire en sorte que l'image remplisse la largeur du carrousel */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ajuster l'image sans déformer */
+}
+
 @media (max-width: 768px) {
   .about_collapses {
     margin: 50px 50px 300px 50px;
@@ -564,6 +571,14 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 3px 6px;
   border-radius: 5px;
+}
+
+.single_slide {
+  flex-shrink: 0;
+  width: 1414px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {

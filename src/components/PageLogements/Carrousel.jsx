@@ -12,7 +12,7 @@ const Gallery = (props) => {
         <div className='slideshow'>
             <div className='slideshow_container' style={{ transform: `translateX(-${slideIdx * 100}%)` }}>
                 {props.img.map((picture, i) => 
-                    <img className='slideshow_container_img' alt='Logement' src={picture} key={i} />
+                    <img className={props.img.length === 1 ? 'single_slide' : 'slideshow_container_img'} alt='Logement' src={picture} key={i} />
                 )}
             </div>
             

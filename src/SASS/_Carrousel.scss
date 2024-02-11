@@ -62,6 +62,14 @@
     }
 }
 
+.single_slide {
+        flex-shrink: 0;
+            width: 1414px;
+            height: 350px;
+            object-fit: cover;
+}
+
+
 @media(max-width: 768px) {
     .slideshow_controls_chevron {
         font-size: 50px;

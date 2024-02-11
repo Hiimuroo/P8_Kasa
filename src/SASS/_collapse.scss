@@ -74,6 +74,7 @@
     .collapse_header_icon.rotate-icon {
         transform: rotate(360deg);
     }
+    
     &.closing {
         &_content {
             animation: slideOut 1s ease-out;
