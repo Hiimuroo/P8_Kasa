@@ -12,12 +12,12 @@
 
 @keyframes slideOut {
     from {
-        transform: translateY(0);
+        transform: translateY(-100%);
         opacity: 1;
     }
 
     to {
-        transform: translateY(-100%);
+        transform: translateY(0%);
         opacity: 0;
     }
 }
@@ -52,7 +52,7 @@
         }
 
         &_icon {
-            padding: 6px 8px;
+            padding: 6px 12px;
             font-size: 20px;
             cursor: pointer;
             transition: transform 0.4s ease-out;
@@ -68,25 +68,14 @@
         font-size: 16px;
         line-height: 23px;
         opacity: 1;
-        animation: max-height 2s ease-out, opacity 2s ease-out;
+        animation: slideIn 0.5s ease-out;
     }
 
     .collapse_header_icon.rotate-icon {
         transform: rotate(360deg);
     }
-    
-    &.closing {
-        &_content {
-            animation: slideOut 1s ease-out;
-        }
-    }
-
-    &.expanded {
-        &_content {
-            animation: slideIn 1s ease-out;
-        }
-    }
 }
+
 
 @media(max-width: 768px) {
     .about_collapses {

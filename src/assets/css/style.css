@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .footer {
   position: absolute;
   max-width: 1440px;
@@ -280,11 +279,11 @@ a {
 }
 @keyframes slideOut {
   from {
-    transform: translateY(0);
+    transform: translateY(-100%);
     opacity: 1;
   }
   to {
-    transform: translateY(-100%);
+    transform: translateY(0%);
     opacity: 0;
   }
 }
@@ -316,7 +315,7 @@ a {
   font-size: 18px;
 }
 .collapse_header_icon {
-  padding: 6px 8px;
+  padding: 6px 12px;
   font-size: 20px;
   cursor: pointer;
   transition: transform 0.4s ease-out;
@@ -330,22 +329,10 @@ a {
   font-size: 16px;
   line-height: 23px;
   opacity: 1;
-  animation: max-height 2s ease-out, opacity 2s ease-out;
+  animation: slideIn 0.5s ease-out;
 }
 .collapse .collapse_header_icon.rotate-icon {
   transform: rotate(360deg);
-}
-.collapse.closing_content {
-  animation: slideOut 1s ease-out;
-}
-.collapse.expanded_content {
-  animation: slideIn 1s ease-out;
-}
-
-.single_slide {
-  width: 100%; /* Faire en sorte que l'image remplisse la largeur du carrousel */
-  -o-object-fit: cover;
-     object-fit: cover; /* Ajuster l'image sans déformer */
 }
 
 @media (max-width: 768px) {
