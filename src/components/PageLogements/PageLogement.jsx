@@ -17,9 +17,11 @@ const PageLogements = () => {
 
     return (
         <section key={logement.id} className='logement'>
+
             <Carrousel 
-                img={logement.pictures} 
+                img={logement.pictures}
             />
+
             <header className='page_logement_header'>
                 <article className='page_logement_header_infos'>
                     <h1 className='page_logement_header_infos_title'>{logement.title}</h1>
@@ -36,20 +38,25 @@ const PageLogements = () => {
                         <p className='page_logement_header_hoster_infos_prenom'>{logement.host.name}</p>
                         <img src={logement.host.picture} alt='host-cover' className='page_logement_header_hoster_infos_img'/>
                     </div>
+
                     <Notes 
                     scaleValue={logement.rating}
                     />
+
                 </article>
             </header>
 
             <article className='page_logement_collapses second_page_collapses'>
             <div className='page_logement_collapses_contents'>
+
         <Collapse
             title='Description'
             content={logement.description}
         />
+
         </div>
         <div className='page_logement_collapses_contents second_page_collapses'>
+
         <Collapse
             title='Équipements'
             content={logement.equipments.map((equipment, i) => (
@@ -58,6 +65,7 @@ const PageLogements = () => {
                   </ul>
               ))}
             />
+            
         </div>
         </article>
         </section>
