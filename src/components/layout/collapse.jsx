@@ -17,7 +17,7 @@ const Collapse = (props) => {
     };
 
     return (
-        <div className={`collapse ${openTab ? '' : 'closing'}`}>
+        <div className={`collapse`}>
             <div className="collapse_header">
                 <h2 className="collapse_header_title">{props.title}</h2>
                 <i
